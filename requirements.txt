@@ -1,0 +1,4 @@
+--extra-index-url=https://dash-demo.plotly.host/Docs/packages
+dash
+dash-design-kit
+gunicorn
