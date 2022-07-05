@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         env:
           SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: echo $SSH_KEY | wc
+        run: echo $SSH_KEY | base64 -d | wc
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
