@@ -59,7 +59,7 @@ jobs:
           echo "$SSH_CONFIG" | base64 --decode -i > ~/.ssh/config
 
           echo '-----> Adding git remote'
-          git config remote.plotly.url >&- || git remote add plotly dokku@dash-customer-success:cicd-michael
+          git config remote.plotly.url >&- || git remote add plotly dokku@dash-customer-success.plotly.host:cicd-michael
 
           echo '-----> Deploying app'
           git push plotly HEAD:master
