@@ -18,7 +18,6 @@ jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - name: print repo/vcs details
         env:
           EVENT_NAME: ${{ github.event_name }}
